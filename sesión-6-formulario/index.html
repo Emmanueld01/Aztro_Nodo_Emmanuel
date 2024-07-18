@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="title">Registro</div>
+        <form id="miFormulario">
+
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+            </div> 
+
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Ingrese su email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" placeholder="Ingrese su dirección">
+            </div>
+
+            <div class="form-group">
+                <label for="departamento">Departamento</label>
+                <input type="text" id="departamento" placeholder="Ingrese su departamento">
+            </div>
+
+            <div class="form-group">
+                <label for="pais">País</label>
+                <input type="text" id="pais" placeholder="Ingrese su país" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="number" id="telefono" placeholder="Ingrese su teléfono">
+            </div>
+
+            <div class="form-group">
+                <label for="descripcion">Descripción personal</label>
+                <textarea id="descripcion" name="descripcion" maxlength="300"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="carrera">¿A qué carera deseas inscribirte?</label>
+                <select id="carrera" name="carrera" required>
+
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="jobs-to-be-done">Jobs to be done</option>
+                    <option value="cloud-native">Cloud native</option>
+                    <option value="front-end">Frontend</option>
+                    <option value="back-end">Backend</option>
+                    <option value="fundamentals">Fundamentals</option>
+                    <option value="python">Python</option>
+                    <option value="marketing-digital">Marketing digital</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="modalidad">Modalidad</label>
+                    <select id="modalidad" name="carrera" required>
+                        <option value="" disabled selected>Seleccionar</option>
+                        <option value="virtual">Virtual</option>
+                        <option value="Presencial">Presencial</option>
+                    </select>
+            </div>
+
+            <div class="form-group">
+                <label>¿Estás trabajando actualmente?</label>
+                <div class="modalidad-container">
+                    <input type="radio" id="si" name="ocupacion" value="si">
+                    <label for="si">Sí</label>
+        
+                    <input type="radio" id="no" name="ocupacion" value="no">
+                    <label for="no">No</label>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <input type="submit" value="Enviar" class="button">
+                <input type="submit" value="Resetear" onclick="resetearFormulario()" class="button">
+            </div>
+        </form>
+    </div>
+    <script>
+        function resetearFormulario() {
+            document.getElementById("miFormulario").reset();
+        }
+    </script>
+</body>
+</html>
