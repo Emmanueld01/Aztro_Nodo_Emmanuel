@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios de lógica</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="barra">
+        <ul>
+          <li><a href="./index.html">Puntos 1 y 2</a></li>
+          <li><a href="./punto-3.html">Punto 3</a></li>
+          <li><a href="">Punto 4 y 5</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <h2>Punto 4</h2>
+          <label for="peso">Peso (kg):</label>
+          <input type="number" id="peso" required />
+  
+          <label for="altura">Altura (cm):</label>
+          <input type="number" id="altura" required />
+  
+          <label for="resultado-4">Resultado:</label>
+          <input type="text" id="resultado-4" readonly />
+
+          <button type="button" onclick="calcularIMC()">Calcular</button>
+          <p id="estado"></p>
+        </fieldset>
+      </form>
+      <br />
+      <form>
+        <fieldset>
+          <h2>Punto 5</h2>
+          <label for="diasTrabajados">Días trabajados:</label>
+          <input type="number" id="diasTrabajados" required /><br />
+  
+          <label for="horasExtrasDiurnas">Horas extras diurnas:</label>
+          <input type="number" id="horasExtrasDiurnas" required /><br />
+  
+          <label for="horasExtrasNocturnas">Horas extras nocturnas:</label>
+          <input type="number" id="horasExtrasNocturnas" required /><br />
+  
+          <label for="horasExtrasFestivas">Horas extras festivas:</label>
+          <input type="number" id="horasExtrasFestivas" required /><br />
+  
+          <label for="resultado">Resultado:</label>
+          <input type="text" id="resultado" readonly />
+
+          <button type="button" onclick="calcularSalario()">Calcular</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <span>Todos los derechos reservados 2024</span>
+    </footer>
+  </body>
+  <script src="formulas.js"></script>
+</html>

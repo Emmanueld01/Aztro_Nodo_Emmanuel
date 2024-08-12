@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de lógica</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="barra">
+      <ul>
+        <li><a href="./index.html">Puntos 1 y 2</a></li>
+        <li><a href="">Punto 3</a></li>
+        <li><a href="./puntos-4-5.html">Punto 4 y 5</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form>
+      <fieldset>
+        <h2>Punto 3</h2>
+        <label for="longitud">Longitud del muro (metros):</label>
+        <input type="number" id="longitud" step="0.01" required />
+
+        <label for="altura">Altura del muro (metros):</label>
+        <input type="number" id="altura" step="0.01" required />
+
+        <label for="resultado-3">Resultado:</label>
+        <input type="text" id="resultado-3" readonly />
+        
+        <button type="button" onclick="calcularLadrillos()">Calcular</button>
+      </fieldset>
+    </form>
+  </main>
+      <footer>
+        <span>Todos los derechos reservados 2024</span>
+      </footer>
+</body>
+<script src="formulas.js"></script>
+</html>
