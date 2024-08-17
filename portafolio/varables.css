@@ -1,0 +1,9 @@
+:root{
+    --text-font-family: 'Intervariable',sans-serif;
+    --title-font-family: 'Roboto Mono Variable', sans-serif;
+    --text-size-normal: 1rem;
+    --text-size-large: 2rem;
+    --main-color: #3083DC;
+    --secondary-color: #F8FFE5;
+    --accent-color: #1E64AE;
+}
