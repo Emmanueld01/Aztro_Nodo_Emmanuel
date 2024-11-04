@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+    <persistence-unit name="myPU">
+        <class>org.example.models.prestamo.Libro</class>
+        <class>org.example.models.prestamo.Autor</class>
+        <class>org.example.models.prestamo.Usuario</class>
+        <class>org.example.models.prestamo.Prestamo</class>
+        <class>org.example.models.medicamento.Medicamento</class>
+        <class>org.example.models.medicamento.Medico</class>
+        <class>org.example.models.medicamento.Paciente</class>
+        <class>org.example.models.medicamento.Sucursal</class>
+        <class>org.example.models.medicamento.VentaMedicamento</class>
+        <class>org.example.models.cita.Cita</class>
+        <class>org.example.models.cita.PacienteCita</class>
+        <class>org.example.models.cita.MedicoCita</class>
+        <class>org.example.models.cita.Especialidad</class>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver"
+                      value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:postgresql://localhost:5432/ejercicios_nodo"/>
+            <property name="jakarta.persistence.jdbc.user"
+                      value="postgres"/>
+            <property name="jakarta.persistence.jdbc.password"
+                      value="1234"/>
+            <property name="hibernate.dialect"
+                      value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
