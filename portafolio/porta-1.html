@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>Desarrollador</h1>
+      <p>Soy desarrollador</p>
+      <nav>
+        <ul>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">proyectos</a></li>
+          <li><a href="#testimonios">testimonios</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="habilidades" style="height:500px;">
+        <h2>Habilidades</h2>
+      </section>
+      <section id="proyectos" style="height:500px;">
+        <h2>Proyectos</h2>
+      </section>
+      <section id="testimonios" style="height:500px;">
+        <h2>Testimonios</h2>
+      </section>
+    </main>
+    <footer>
+      <h2>Pongamonos en contácto</h2>
+      <form action="">
+        <fieldset>
+            <legend>Nombres</legend>
+            <div>
+                <label for="nombre" style="margin-right: 10px;">
+                    Nombre   <input type="text" name="name" /></label>
+                
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" />
+            </div>
+            <div>
+                <label for="genero">Genero:</label>
+                <label >hombre<input type="radio" name="genero" value="hombre" /></label>
+                <label for="mujer">mujer<input type="radio" name="genero" value="mujer" /></label>
+                <label for="otro">otro<input type="radio" name="genero" value="otro" /></label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Contacto:</legend>
+            <select name="programming language" id="">
+                <option value=""selected disabled>Seleccionar</option>
+                <option value="go">go</option>
+                <option value="python">python</option>
+            </select>
+            <label>
+                Asunto: <input type="text" name="subject" id="" />
+            </label>
+            <label>
+                Tipo de contacto:
+                <label> Peticiones<input type="checkbox" value="peticiones" /></label>
+                <label> Quejas <input type="checkbox" value="quejas" /></label>
+            </label>
+        </fieldset>
+      </form>
+    </footer>
+  </body>
+</html>
